@@ -1,16 +1,15 @@
 {
   "name": "case-change",
   "displayName": "Case Change",
-  "publisher": "AkankshaSingh872",
+  "publisher": "齐天大圣！",
   "description": "It will change the selected text case to different other available cases",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "icon": "static/icon.png",
   "author": {
     "name": "Akanksha Singh"
   },
   "markdown": "standard",
   "keywords": [
-    "Akanksha Singh",
     "Case Change",
     "Multiple Select Change",
     "Case Convert",

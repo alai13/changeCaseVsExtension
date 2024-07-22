@@ -20,6 +20,7 @@ export function activate(context: vscode.ExtensionContext) {
         { scheme: "file", language: "javascriptreact" },
         { scheme: "file", language: "sass" },
         { scheme: "file", language: "go" },
+        { scheme: "file", language: "vue" },
       ],
       new ChangeCase(),
       {
@@ -129,16 +130,16 @@ export class ChangeCase implements vscode.CodeActionProvider {
       lowerCase: changeToLowerCaseWithSpaces,
     };
     const caseSettings = [
-      "snakeCase",
-      "camelCase",
-      "upperCase",
-      "flatCase",
       "kebabCase",
-      "constantCase",
       "pascalCase",
-      "titleCase",
-      "capitalizeCase",
-      "lowerCase",
+      // "snakeCase",
+      // "camelCase",
+      // "upperCase",
+      // "flatCase",
+      // "constantCase",
+      // "titleCase",
+      // "capitalizeCase",
+      // "lowerCase",
     ];
     caseSettings.map((setting: string) => {
       if (vscode.workspace.getConfiguration("case.setting")[setting]) {
